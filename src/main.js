@@ -333,6 +333,8 @@ class Boot extends Phaser.Scene {
         this.load.image('turtle', 'assets/sprites/props/turtle.png')
         this.load.image('cat', 'assets/sprites/props/cat.png')
         this.load.image('glob', 'assets/sprites/props/glob.png')
+        this.load.image('livro-azul', 'assets/sprites/props/livro_azul.png')
+        
     }
     loadAudio() {
         this.load.audio('hit', 'assets/sounds/hit.ogg')
@@ -509,6 +511,7 @@ class Boot extends Phaser.Scene {
     //#endregion Create Animation
 
     create() {
+        this.createAnimations();
 
         this.scene.start("GameScene");
     }
