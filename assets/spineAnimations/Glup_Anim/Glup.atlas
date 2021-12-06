@@ -1,0 +1,181 @@
+
+Glup.png
+size: 2048,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+images/_0000_bulb
+  rotate: true
+  xy: 1024, 2
+  size: 51, 54
+  orig: 51, 54
+  offset: 0, 0
+  index: -1
+images/_0000_tongue_sticking_out
+  rotate: false
+  xy: 1196, 5
+  size: 63, 53
+  orig: 69, 59
+  offset: 4, 3
+  index: -1
+images/_0001_lamp
+  rotate: true
+  xy: 640, 298
+  size: 212, 185
+  orig: 212, 185
+  offset: 0, 0
+  index: -1
+images/_0002_notebook
+  rotate: false
+  xy: 959, 55
+  size: 235, 135
+  orig: 235, 135
+  offset: 0, 0
+  index: -1
+images/_0003_smile
+  rotate: false
+  xy: 721, 43
+  size: 236, 145
+  orig: 236, 145
+  offset: 0, 0
+  index: -1
+images/_0004_Z
+  rotate: true
+  xy: 827, 309
+  size: 86, 114
+  orig: 86, 114
+  offset: 0, 0
+  index: -1
+images/_0005_u_pupil
+  rotate: false
+  xy: 721, 5
+  size: 80, 36
+  orig: 80, 36
+  offset: 0, 0
+  index: -1
+images/_0006_o_mouth
+  rotate: false
+  xy: 827, 397
+  size: 108, 113
+  orig: 108, 113
+  offset: 0, 0
+  index: -1
+images/_0007_tongue
+  rotate: false
+  xy: 897, 190
+  size: 46, 43
+  orig: 46, 43
+  offset: 0, 0
+  index: -1
+images/_0008_O_mouth_bg
+  rotate: false
+  xy: 937, 421
+  size: 85, 89
+  orig: 85, 89
+  offset: 0, 0
+  index: -1
+images/_0009_arm
+  rotate: false
+  xy: 475, 169
+  size: 163, 341
+  orig: 172, 345
+  offset: 5, 4
+  index: -1
+images/_0010_eyebrow
+  rotate: false
+  xy: 791, 192
+  size: 104, 41
+  orig: 104, 41
+  offset: 0, 0
+  index: -1
+images/_0011_straight_mouth
+  rotate: false
+  xy: 233, 2
+  size: 96, 24
+  orig: 96, 24
+  offset: 0, 0
+  index: -1
+images/_0012_pupil
+  rotate: false
+  xy: 945, 192
+  size: 41, 41
+  orig: 41, 41
+  offset: 0, 0
+  index: -1
+images/_0013_eyelid_start
+  rotate: false
+  xy: 331, 13
+  size: 88, 13
+  orig: 88, 13
+  offset: 0, 0
+  index: -1
+images/_0014_eyelid_quarter
+  rotate: false
+  xy: 640, 190
+  size: 149, 43
+  orig: 149, 43
+  offset: 0, 0
+  index: -1
+images/_0015_eyelid_half
+  rotate: false
+  xy: 1268, 249
+  size: 173, 86
+  orig: 173, 86
+  offset: 0, 0
+  index: -1
+images/_0016_eyelid_closed
+  rotate: false
+  xy: 1196, 60
+  size: 173, 173
+  orig: 173, 173
+  offset: 0, 0
+  index: -1
+images/_0017_eyeball
+  rotate: false
+  xy: 1268, 337
+  size: 173, 173
+  orig: 173, 173
+  offset: 0, 0
+  index: -1
+images/_0018_body
+  rotate: true
+  xy: 2, 28
+  size: 482, 471
+  orig: 482, 471
+  offset: 0, 0
+  index: -1
+images/_0019_floor_light
+  rotate: false
+  xy: 640, 235
+  size: 626, 61
+  orig: 626, 61
+  offset: 0, 0
+  index: -1
+images/bola_luz
+  rotate: false
+  xy: 943, 362
+  size: 57, 57
+  orig: 57, 57
+  offset: 0, 0
+  index: -1
+images/corda_luz
+  rotate: true
+  xy: 2, 16
+  size: 10, 229
+  orig: 10, 229
+  offset: 0, 0
+  index: -1
+images/pen
+  rotate: true
+  xy: 959, 8
+  size: 45, 63
+  orig: 48, 66
+  offset: 2, 2
+  index: -1
+images/prancheta
+  rotate: false
+  xy: 475, 7
+  size: 244, 160
+  orig: 250, 178
+  offset: 3, 9
+  index: -1

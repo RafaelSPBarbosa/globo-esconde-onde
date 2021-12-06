@@ -1,0 +1,118 @@
+
+Grrr.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+images/_0000_dirt_cloud
+  rotate: false
+  xy: 2, 114
+  size: 105, 94
+  orig: 105, 94
+  offset: 0, 0
+  index: -1
+images/_0001_straight_mouth
+  rotate: false
+  xy: 109, 189
+  size: 160, 19
+  orig: 160, 19
+  offset: 0, 0
+  index: -1
+images/_0002_arm
+  rotate: false
+  xy: 606, 181
+  size: 97, 245
+  orig: 97, 245
+  offset: 0, 0
+  index: -1
+images/_0003_angry_mouth
+  rotate: true
+  xy: 2, 2
+  size: 110, 57
+  orig: 110, 57
+  offset: 0, 0
+  index: -1
+images/_0004_o_mouth
+  rotate: false
+  xy: 606, 644
+  size: 108, 113
+  orig: 108, 113
+  offset: 0, 0
+  index: -1
+images/_0005_tongue
+  rotate: true
+  xy: 61, 66
+  size: 46, 43
+  orig: 46, 43
+  offset: 0, 0
+  index: -1
+images/_0006_O_mouth_bg
+  rotate: false
+  xy: 271, 119
+  size: 85, 89
+  orig: 85, 89
+  offset: 0, 0
+  index: -1
+images/_0007_eyebrows
+  rotate: true
+  xy: 358, 102
+  size: 106, 25
+  orig: 106, 25
+  offset: 0, 0
+  index: -1
+images/_0008_pupil
+  rotate: false
+  xy: 245, 163
+  size: 24, 24
+  orig: 24, 24
+  offset: 0, 0
+  index: -1
+images/_0009_eyelid_start
+  rotate: true
+  xy: 245, 108
+  size: 53, 7
+  orig: 53, 7
+  offset: 0, 0
+  index: -1
+images/_0010_eyelid_quarter
+  rotate: true
+  xy: 245, 16
+  size: 90, 25
+  orig: 90, 25
+  offset: 0, 0
+  index: -1
+images/_0011_eyelid_half
+  rotate: true
+  xy: 192, 81
+  size: 106, 51
+  orig: 106, 51
+  offset: 0, 0
+  index: -1
+images/_0012_eyelid_closed
+  rotate: false
+  xy: 606, 536
+  size: 106, 106
+  orig: 106, 106
+  offset: 0, 0
+  index: -1
+images/_0012_eyelid_semi
+  rotate: true
+  xy: 109, 81
+  size: 106, 81
+  orig: 106, 106
+  offset: 0, 25
+  index: -1
+images/_0013_eyeball
+  rotate: false
+  xy: 606, 428
+  size: 106, 106
+  orig: 106, 106
+  offset: 0, 0
+  index: -1
+images/_0014_body
+  rotate: false
+  xy: 2, 210
+  size: 602, 547
+  orig: 602, 547
+  offset: 0, 0
+  index: -1

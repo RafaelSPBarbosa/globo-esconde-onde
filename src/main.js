@@ -1,4 +1,5 @@
-import GameScene from './scenes/GameScene.js'
+import GameScene from './scenes/GameScene.js';
+import MenuScene from './scenes/MenuScene.js';
 
 // window.addEventListener('load', () => {
 //     // setTimeout to 1 second will prevent a bug if you using a splash screen
@@ -56,7 +57,7 @@ window.addEventListener("load", function () {
         fps: {
             target: 60,
         },    
-        scene: [Boot, GameScene],
+        scene: [Boot, MenuScene, GameScene],
     });
 
     //game.scene.add("Boot", Boot, true);
@@ -65,7 +66,18 @@ window.addEventListener("load", function () {
 class Boot extends Phaser.Scene {
     constructor() {
         super({
-            key: "Boot"
+            key: "Boot",
+            pack: {
+                files: [
+                    {
+                        type: "scenePlugin",
+                        key: "SpinePlugin",
+                        url: "src/SpinePlugin.min.js",
+                        //@ts-ignore
+                        sceneKey: "spine",
+                    },
+                ],
+            },
         });
     }
 
@@ -87,6 +99,8 @@ class Boot extends Phaser.Scene {
         //#endregion
         //#region SpriteSheets
         this.loadSpriteSheets()
+
+        this.loadSpineAnimations();
 
         this.load.on('complete', function (value) {
             console.log("Assets carregados");
@@ -228,9 +242,6 @@ class Boot extends Phaser.Scene {
 
         this.load.image('menu-bg', 'assets/sprites/bgs/menu_bg.png')
         this.load.image('first-screen', 'assets/sprites/bgs/first_screen.png')
-        this.load.image('k-test', 'assets/sprites/bgs/k_test.png')
-        this.load.image('menu-ul', 'assets/sprites/bgs/menu-ul.png')
-        this.load.image('bgtest', 'assets/sprites/bgs/Aspect-Ratio-Test.png')
     }
     loadCharactersSprites() {
         for (var i = 1; i <= this.levelsquantity; i++) {
@@ -510,10 +521,42 @@ class Boot extends Phaser.Scene {
     }
     //#endregion Create Animation
 
+    loadSpineAnimations(){
+        this.load.spine(
+            "Glup_Anim",
+            "assets/spineAnimations/Glup_Anim/Glup.json",
+            "assets/spineAnimations/Glup_Anim/Glup.atlas"
+        );
+
+        this.load.spine(
+            "Grr_Anim",
+            "assets/spineAnimations/Grrr_Anim/Grrr.json",
+            "assets/spineAnimations/Grrr_Anim/Grrr.atlas"
+        );
+
+        this.load.spine(
+            "Han_Anim",
+            "assets/spineAnimations/Han_Anim/Han.json",
+            "assets/spineAnimations/Han_Anim/Han.atlas"
+        );
+
+        this.load.spine(
+            "Iei_Anim",
+            "assets/spineAnimations/Iei_Anim/Iei.json",
+            "assets/spineAnimations/Iei_Anim/Iei.atlas"
+        );
+
+        this.load.spine(
+            "Ihuu_Anim",
+            "assets/spineAnimations/Ihuu_Anim/Ihuu.json",
+            "assets/spineAnimations/Ihuu_Anim/Ihuu.atlas"
+        );
+    }
+
     create() {
         this.createAnimations();
 
-        this.scene.start("GameScene");
+        this.scene.start("MenuScene");
     }
 
    

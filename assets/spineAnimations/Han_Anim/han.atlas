@@ -1,0 +1,132 @@
+
+han.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+images/_0000_u_iris
+  rotate: false
+  xy: 715, 619
+  size: 40, 23
+  orig: 40, 23
+  offset: 0, 0
+  index: -1
+images/_0001_u_mouth
+  rotate: false
+  xy: 2, 287
+  size: 57, 57
+  orig: 65, 60
+  offset: 4, 3
+  index: -1
+images/_0002_o_mouth
+  rotate: false
+  xy: 608, 603
+  size: 105, 72
+  orig: 108, 77
+  offset: 2, 3
+  index: -1
+images/_0003_tongue
+  rotate: false
+  xy: 715, 644
+  size: 43, 31
+  orig: 43, 31
+  offset: 0, 0
+  index: -1
+images/_0004_straight_mouth
+  rotate: false
+  xy: 608, 582
+  size: 196, 19
+  orig: 196, 19
+  offset: 0, 0
+  index: -1
+images/_0005_mouth_extention
+  rotate: false
+  xy: 608, 677
+  size: 150, 168
+  orig: 150, 168
+  offset: 0, 0
+  index: -1
+images/_0006_mouth_bg
+  rotate: false
+  xy: 760, 612
+  size: 83, 59
+  orig: 83, 59
+  offset: 0, 0
+  index: -1
+images/_0008_single_tooth
+  rotate: false
+  xy: 61, 302
+  size: 48, 42
+  orig: 52, 46
+  offset: 2, 2
+  index: -1
+images/_0009_straight_arm
+  rotate: false
+  xy: 608, 176
+  size: 73, 337
+  orig: 73, 337
+  offset: 0, 0
+  index: -1
+images/_0010_circle_iris
+  rotate: false
+  xy: 2, 265
+  size: 20, 20
+  orig: 20, 20
+  offset: 0, 0
+  index: -1
+images/_0011_eyelid_start
+  rotate: false
+  xy: 111, 334
+  size: 54, 10
+  orig: 54, 10
+  offset: 0, 0
+  index: -1
+images/_0012_eyelid_quarter
+  rotate: false
+  xy: 608, 515
+  size: 75, 22
+  orig: 75, 22
+  offset: 0, 0
+  index: -1
+images/_0013_eyelid_half
+  rotate: false
+  xy: 608, 539
+  size: 85, 41
+  orig: 85, 41
+  offset: 0, 0
+  index: -1
+images/_0014_eyelid_closed
+  rotate: false
+  xy: 760, 760
+  size: 85, 85
+  orig: 85, 85
+  offset: 0, 0
+  index: -1
+images/_0015_eyeball
+  rotate: false
+  xy: 760, 673
+  size: 85, 85
+  orig: 85, 85
+  offset: 0, 0
+  index: -1
+images/_0016_eyebrows
+  rotate: false
+  xy: 61, 278
+  size: 58, 22
+  orig: 58, 22
+  offset: 0, 0
+  index: -1
+images/_0017_body_base
+  rotate: false
+  xy: 2, 346
+  size: 301, 499
+  orig: 301, 499
+  offset: 0, 0
+  index: -1
+images/_0017_body_base_flip
+  rotate: false
+  xy: 305, 346
+  size: 301, 499
+  orig: 301, 499
+  offset: 0, 0
+  index: -1

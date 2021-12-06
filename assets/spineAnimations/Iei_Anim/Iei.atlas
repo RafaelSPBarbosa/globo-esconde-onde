@@ -1,0 +1,146 @@
+
+Iei.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+images/_0000_tongue_sticking_out
+  rotate: false
+  xy: 343, 147
+  size: 66, 56
+  orig: 69, 59
+  offset: 3, 3
+  index: -1
+images/_0001_U_mouth
+  rotate: false
+  xy: 234, 195
+  size: 77, 78
+  orig: 77, 78
+  offset: 0, 0
+  index: -1
+images/_0001_u_pupil
+  rotate: false
+  xy: 91, 351
+  size: 40, 23
+  orig: 40, 23
+  offset: 0, 0
+  index: -1
+images/_0002_smile
+  rotate: false
+  xy: 2, 187
+  size: 230, 162
+  orig: 230, 162
+  offset: 0, 0
+  index: -1
+images/_0003_o_mouth
+  rotate: false
+  xy: 146, 72
+  size: 108, 113
+  orig: 108, 113
+  offset: 0, 0
+  index: -1
+images/_0004_tongue
+  rotate: false
+  xy: 369, 68
+  size: 46, 43
+  orig: 46, 43
+  offset: 0, 0
+  index: -1
+images/_0005_eyebrow
+  rotate: false
+  xy: 2, 6
+  size: 96, 35
+  orig: 96, 35
+  offset: 0, 0
+  index: -1
+images/_0006_mouth_straight
+  rotate: false
+  xy: 256, 77
+  size: 107, 25
+  orig: 107, 25
+  offset: 0, 0
+  index: -1
+images/_0007_O_mouth_bg
+  rotate: false
+  xy: 256, 104
+  size: 85, 89
+  orig: 85, 89
+  offset: 0, 0
+  index: -1
+images/_0008_arm
+  rotate: false
+  xy: 2, 351
+  size: 87, 168
+  orig: 88, 171
+  offset: 0, 3
+  index: -1
+images/_0009_eyelid_closed
+  rotate: false
+  xy: 91, 376
+  size: 143, 143
+  orig: 143, 143
+  offset: 0, 0
+  index: -1
+images/_0010_eyelid_quarter
+  rotate: false
+  xy: 100, 7
+  size: 122, 34
+  orig: 122, 34
+  offset: 0, 0
+  index: -1
+images/_0011_eyelid_start
+  rotate: false
+  xy: 133, 362
+  size: 80, 12
+  orig: 80, 12
+  offset: 0, 0
+  index: -1
+images/_0012_eyelid_half
+  rotate: false
+  xy: 224, 2
+  size: 143, 68
+  orig: 143, 68
+  offset: 0, 0
+  index: -1
+images/_0013_pupil
+  rotate: false
+  xy: 343, 113
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+images/_0014_eyeball
+  rotate: false
+  xy: 2, 43
+  size: 142, 142
+  orig: 142, 142
+  offset: 0, 0
+  index: -1
+images/_0015_eyelash
+  rotate: false
+  xy: 313, 205
+  size: 65, 68
+  orig: 65, 68
+  offset: 0, 0
+  index: -1
+images/_0016_cheeks
+  rotate: false
+  xy: 146, 43
+  size: 69, 27
+  orig: 69, 27
+  offset: 0, 0
+  index: -1
+images/_0017_body
+  rotate: false
+  xy: 2, 521
+  size: 297, 501
+  orig: 297, 501
+  offset: 0, 0
+  index: -1
+images/pum
+  rotate: false
+  xy: 234, 275
+  size: 89, 99
+  orig: 101, 107
+  offset: 5, 4
+  index: -1
