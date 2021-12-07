@@ -38,12 +38,18 @@ export default class MenuScene extends Phaser.Scene {
             yPos += 300;
         }
 
-        // this.add.spine(
-        //     2000,
-        //     1300,
-        //     "Glup_Anim",
-        //     "glup_corda_entra",
-        //     false).setScale(0.5);
+        //var anim = this.add.spine(
+        //2000,
+        //1200,
+        //"Grrr_Anim",
+        //"grrr_bracos",
+        //true).setScale(0.5);
+
+        //var rectangle = this.add.rectangle(2000, 1200, 150, 150);
+        //rectangle.isFilled = true;
+        //rectangle.fillColor = 0xff0000;
+
+        //console.log(rectangle);
     }
 
 

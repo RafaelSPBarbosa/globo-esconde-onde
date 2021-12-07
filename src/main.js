@@ -345,6 +345,7 @@ class Boot extends Phaser.Scene {
         this.load.image('cat', 'assets/sprites/props/cat.png')
         this.load.image('glob', 'assets/sprites/props/glob.png')
         this.load.image('livro-azul', 'assets/sprites/props/livro_azul.png')
+        this.load.image('worm-toy', 'assets/sprites/props/worm_toy.png')
         
     }
     loadAudio() {
@@ -529,7 +530,7 @@ class Boot extends Phaser.Scene {
         );
 
         this.load.spine(
-            "Grr_Anim",
+            "Grrr_Anim",
             "assets/spineAnimations/Grrr_Anim/Grrr.json",
             "assets/spineAnimations/Grrr_Anim/Grrr.atlas"
         );

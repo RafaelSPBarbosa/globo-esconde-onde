@@ -22,7 +22,7 @@ export default class StartAnimation {
         })
 
         let animCtrl = true;
-        this.startAnimation = this.scene.add.spine(1450, 1350, "Glup_Anim", "glup_lamp_corda", false).setScale(0.7);
+        this.startAnimation = this.scene.add.spine(1400, 1350, "Glup_Anim", "glup_lamp_corda", false).setScale(0.7);
         this.startAnimation.on("complete", () => {
 
             if (animCtrl) {
@@ -115,17 +115,16 @@ export default class StartAnimation {
 
         fade.backg.fillColor = 0x12143D;
         
-        var animation = this.scene.add.spine(1450, 1350, "Glup_Anim", "glup_corda_entra", false).setScale(0.7);
+        var animation = this.scene.add.spine(1400, 1350, "Glup_Anim", "glup_corda_entra", false).setScale(0.7);
 
         let clickZone = this.scene.add.zone(2010, 200, 250, 600).setInteractive();
 
         clickZone.on('pointerdown', ()=>{
             animation.setAnimation(0,"glup_corda_swap_clic");
             animation.on("complete", ()=>{
-                animation.setAnimation(0,"glup_corda_entra");
-                //animation.state.timeScale = -1;
                 animation.destroy();
             })
+            clickZone.destroy();
             fade.DestroyThis();
         })
         
