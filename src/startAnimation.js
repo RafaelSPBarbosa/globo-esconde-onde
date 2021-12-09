@@ -22,15 +22,16 @@ export default class StartAnimation {
         })
 
         let animCtrl = true;
-        this.startAnimation = this.scene.add.spine(1400, 1350, "Glup_Anim", "glup_lamp_corda", false).setScale(0.7);
-        this.startAnimation.on("complete", () => {
+        var startAnimation = this.scene.add.spine(1400, 1350, "Glup_Anim", "glup_lamp_corda", false).setScale(0.7);
+        startAnimation.on("complete", () => {
 
             if (animCtrl) {
-                this.startAnimation.setAnimation(0, "glup_olhos");
+                startAnimation.setAnimation(0, "glup_olhos");
                 animCtrl = false;
             }
             else {
-                this.startAnimation.setVisible(false);
+                startAnimation.setVisible(false);
+                startAnimation.destroy();
                 this.scene.time.addEvent({
                     delay: 100,
                     callback: () => {

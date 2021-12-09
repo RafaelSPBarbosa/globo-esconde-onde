@@ -65,7 +65,7 @@ export default class Character {
         
         this.charObj.setInteractive().on("pointerdown", ()=>{
             this.charObj.setVisible(false);
-            this.scene.verifyVictory();
+            this.scene.verifyVictory(this.charID);
             
             this.startAnimation(xPos, yPos, offsetX, offsetY);
             //var charAnim = this.scene.add.sprite(xPos, yPos, sprite);
@@ -104,5 +104,9 @@ export default class Character {
 
     playVictoryAnimation(){
         this.anim.setAnimation(0,this.animationData[0].victory, false);
+    }
+
+    destroyAnimations(){
+        this.anim.destroy();
     }
 }

@@ -43,25 +43,25 @@ export default class GameScene extends Phaser.Scene {
             { x: 1436, y: 1051, scale: 0.77, offsetX: 0, offsetY: -100 }
         ],
         [//4
-            { x: 546, y: 583, scale: 1.09, offsetX: 0, offsetY: 0 },
+            { x: 546, y: 583, scale: 1.09, offsetX: 20, offsetY: -70 },
             { x: 1571, y: 709, scale: 1.007, offsetX: 0, offsetY: 100 },
             { x: 1279, y: 669, scale: 1, offsetX: 30, offsetY: 0 },
-            { x: 1894, y: 255, scale: 1, offsetX: 0, offsetY: 0 },
-            { x: 1253, y: 986, scale: 1, offsetX: 80, offsetY: 80 }
+            { x: 1894, y: 255, scale: 1, offsetX: 20, offsetY: 335 },
+            { x: 1253, y: 986, scale: 1, offsetX: 90, offsetY: 100 }
         ],
         [//5
-            { x: 1571, y: 552, scale: 0.89, offsetX: 0, offsetY: 0 },
-            { x: 793, y: 720, scale: 1, offsetX: 0, offsetY: -50 },
+            { x: 1571, y: 552, scale: 0.89, offsetX: 0, offsetY: -25 },
+            { x: 793, y: 720, scale: 1, offsetX: 0, offsetY: -40 },
             { x: 1304, y: 1051, scale: 1.06, offsetX: 60, offsetY: 0 },
-            { x: 922, y: 931, scale: 1.097, offsetX: 20, offsetY: -30 },
-            { x: 1948, y: 1028, scale: 1.11, offsetX: 0, offsetY: 0 }
+            { x: 922, y: 931, scale: 1.097, offsetX: 25, offsetY: -30 },
+            { x: 1948, y: 1028, scale: 1.11, offsetX: 0, offsetY: 20 }
         ],
         [//6
-            { x: 895, y: 590, scale: 1.04, offsetX: 0, offsetY: -80 },
+            { x: 895, y: 590, scale: 1.04, offsetX: 10, offsetY: -90 },
             { x: 1724, y: 1111, scale: 1, offsetX: -120, offsetY: -60 },
-            { x: 932, y: 846, scale: 1.2, offsetX: 25, offsetY: 10 },
-            { x: 741, y: 754, scale: 1.04, offsetX: 30, offsetY: -60 },
-            { x: 1774, y: 808, scale: 1, offsetX: -10, offsetY: 30 }
+            { x: 932, y: 846, scale: 1.2, offsetX: 25, offsetY: 30 },
+            { x: 741, y: 754, scale: 1.04, offsetX: 30, offsetY: -70 },
+            { x: 1774, y: 808, scale: 1, offsetX: 0, offsetY: 50 }
         ],
         [//7
             { x: 2009, y: 583, scale: 0.96, offsetX: 0, offsetY: 0 },
@@ -74,15 +74,15 @@ export default class GameScene extends Phaser.Scene {
             { x: 884, y: 368, scale: 0.93, offsetX: 0, offsetY: 0 },
             { x: 1430, y: 411, scale: 1.04, offsetX: -30, offsetY: -70 },
             { x: 724, y: 625, scale: 0.91, offsetX: 30, offsetY: 0 },
-            { x: 1630, y: 680, scale: 0.9, offsetX: 100, offsetY: 0 },
+            { x: 1630, y: 680, scale: 0.9, offsetX: 100, offsetY: 15 },
             { x: 1490, y: 1053, scale: 0.93, offsetX: 0, offsetY: 0 }
         ],
         [//9
             { x: 974, y: 771, scale: 1.13, offsetX: 0, offsetY: -70 },
-            { x: 760, y: 956, scale: 0.96, offsetX: 0, offsetY: -60 },
+            { x: 760, y: 956, scale: 0.96, offsetX: 0, offsetY: -65 },
             { x: 1913, y: 579, scale: 1.06, offsetX: -15, offsetY: 75 },
-            { x: 791, y: 1105, scale: 1.01, offsetX: 0, offsetY: 20 },
-            { x: 1625, y: 937, scale: 1, offsetX: 0, offsetY: -65 }
+            { x: 791, y: 1105, scale: 1.01, offsetX: 0, offsetY: 30 },
+            { x: 1625, y: 937, scale: 1, offsetX: -20, offsetY: -65 }
         ],
         [//10
             { x: 341, y: 605, scale: 0.87, offsetX: 0, offsetY: 0 },
@@ -92,7 +92,7 @@ export default class GameScene extends Phaser.Scene {
             { x: 2062, y: 889, scale: 0.92, offsetX: 20, offsetY: -20 }
         ],
         [//11
-            { x: 1866, y: 585, scale: 0.91, offsetX: 0, offsetY: 0 },
+            { x: 1866, y: 585, scale: 0.91, offsetX: 0, offsetY: -40 },
             { x: 2033, y: 1017, scale: 1.07, offsetX: 0, offsetY: 0 },
             { x: 808, y: 967, scale: 0.77, offsetX: 0, offsetY: 0 },
             { x: 1315, y: 796, scale: 1, offsetX: 50, offsetY: 30 },
@@ -155,7 +155,7 @@ export default class GameScene extends Phaser.Scene {
             { name: "t-unicorn", x: 1859, y: 708, scale: 1 }
         ],
         [//10            
-
+            { name: "toy-boat", x: 2016, y: 915, scale: 0.91 }
         ],
         [//11            
             { name: "turtle", x: 855, y: 1071, scale: 1 }
@@ -163,40 +163,6 @@ export default class GameScene extends Phaser.Scene {
         [//12            
             { name: "glob", x: 528, y: 834, scale: 1.04 },
             { name: "worm-toy", x: 1918, y: 425, scale: 1.02 },
-        ]
-    ]
-
-
-    characterAnimations = [
-        [
-            { key: "Ihuu_Anim", victory: 'ihuu_idle_comemoracao', animationNumber: 1, scale: 0.15 },
-            'ihuu_idle'
-        ],
-        [
-            { key: "Iei_Anim", victory: 'iei_idle_comemoracao', animationNumber: 6, scale: 0.16 },
-            'iei_idle_neutro_1',
-            'iei_idle_neutro_2',
-            'iei_idle_stretch',
-            'iei_idle_neutro_1',
-            'iei_idle_neutro_2',
-            'iei_idle_pum'
-        ],
-        [
-            { key: "Han_Anim", victory: 'han_comemoracao', animationNumber: 2, scale: 0.25 },
-            'han_idle_neutro_1',
-            'han_idle_neutro_2'
-        ],
-        [
-            { key: "Grrr_Anim", victory: 'grrr_bracos', animationNumber: 2, scale: 0.2 },
-            'grrr_idle',
-            'grrr_suspiro'
-        ],
-        [
-            { key: "Glup_Anim", victory: 'glup_comemoracao', animationNumber: 4, scale: 0.15 },
-            'glup_idle',
-            'glup_sleeping',
-            'glup_idle',
-            'glup_notes'
         ]
     ]
 
@@ -277,14 +243,34 @@ export default class GameScene extends Phaser.Scene {
         for (let i = 0; i < props.length; i++) {
             this.add.image(props[i].x, props[i].y, props[i].name).setScale(props[i].scale);
         }
+
+        this.containerPanel = this.add.container(this.screenCenterX, this.cameras.main.height + 150, []);
+
+        this.containerPanel.add(this.add.image(0, 0, "portrait-panel"));
+
+        var charactersPanelData = [
+            {x:-400 , y: -41, scale: 0.13, eyeX: -400 ,eyeY:-61 },
+            {x:-250 , y: 57, scale: 0.2, eyeX: -248 ,eyeY: 7},
+            {x:-63 , y: -1, scale: 0.36, eyeX: -68 ,eyeY:-102},
+            {x:168 , y: 38, scale: 0.25, eyeX: 170 ,eyeY: 0},
+            {x:390 , y: 39, scale: 0.16, eyeX: 385 ,eyeY:-17}
+        ]
+
+        for(let i = 1; i<=5;i++){
+            this.containerPanel.add(this.add.image(charactersPanelData[i-1].eyeX, charactersPanelData[i-1].eyeY, "eye-"+i).
+            setScale(charactersPanelData[i-1].scale));
+          
+        }
+
+        for(let i = 1; i<=5;i++){
+            this.containerPanel.add(this.add.image(charactersPanelData[i-1].x, charactersPanelData[i-1].y, i+"-portrait")
+            .setScale(charactersPanelData[i-1].scale).setVisible(false));
+        }
     }
 
-    verifyVictory() {
+    verifyVictory(charID) {
         this.charactersFound += 1;
         if (this.charactersFound == 5) {
-
-
-
             this.time.addEvent({
                 delay: 1000,
                 callback: () => {
@@ -307,13 +293,32 @@ export default class GameScene extends Phaser.Scene {
                         duration: 1000,
                         delay: 3000,
                         onComplete: () => {
-                            this.scene.start("MenuScene");
+                            for (let i = 0; i < this.characters.length; i++) {
+                                this.characters[i].destroyAnimations();
+                            }
+                            //this.scene.pause();
+                            this.scene.sendToBack("GameScene");
+                            this.scene.run("MenuScene");
+                            //fade.DestroyThis();
                         }
                     });
                 }
             })
 
 
+        }
+
+        this.containerPanel.getAt(charID+6).setVisible(true);
+
+        if(this.paneltween==null || !this.paneltween.isPlaying()){
+            this.paneltween = this.add.tween({
+                targets: this.containerPanel,
+                y: this.containerPanel.y - 280,
+                duration: 700,
+                delay:500,
+                yoyo: true,
+                hold:3000
+            })
         }
     }
 

@@ -14,7 +14,8 @@ export default class Button {
 
         rectangle.setInteractive();
         rectangle.on('pointerdown', ()=>{
-            this.scene.scene.start('GameScene', {levelNum:this.levelNum});
+            this.scene.scene.sendToBack("MenuScene");
+            this.scene.scene.run('GameScene', {levelNum:this.levelNum});
         })
     }
 }

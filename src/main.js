@@ -1,5 +1,6 @@
 import GameScene from './scenes/GameScene.js';
-import MenuScene from './scenes/MenuScene.js';
+import MenuScene from './scenes/MenuSceneTest.js';
+import LevelSelection from './scenes/LevelSelectionScene.js';
 
 // window.addEventListener('load', () => {
 //     // setTimeout to 1 second will prevent a bug if you using a splash screen
@@ -57,7 +58,7 @@ window.addEventListener("load", function () {
         fps: {
             target: 60,
         },    
-        scene: [Boot, MenuScene, GameScene],
+        scene: [Boot, MenuScene, LevelSelection, GameScene],
     });
 
     //game.scene.add("Boot", Boot, true);
@@ -236,10 +237,12 @@ class Boot extends Phaser.Scene {
             this.load.image('bg' + i, 'assets/sprites/bgs/lvl' + i + '-bg.png')
         }
 
-        for (var i = 1; i <= this.levelsquantity; i++) {
-            this.load.image('fase' + i, 'assets/sprites/bgs/fase' + i + '.png')
-        }        
+        // for (var i = 1; i <= this.levelsquantity; i++) {
+        //     this.load.image('fase' + i, 'assets/sprites/bgs/fase' + i + '.png')
+        // }        
 
+
+        this.load.image('levelSelection-bg', 'assets/sprites/bgs/levelBG.png')
         this.load.image('menu-bg', 'assets/sprites/bgs/menu_bg.png')
         this.load.image('first-screen', 'assets/sprites/bgs/first_screen.png')
     }
@@ -297,6 +300,8 @@ class Boot extends Phaser.Scene {
         this.load.image('3-sp', 'assets/sprites/char-portraits/3-small-portrait.png')
         this.load.image('4-sp', 'assets/sprites/char-portraits/4-small-portrait.png')
         this.load.image('5-sp', 'assets/sprites/char-portraits/5-small-portrait.png')
+
+        this.load.image('portrait-panel', 'assets/sprites/char-portraits/portrait_panel.png')
     }
     loadSilhouettes() {
         this.load.image('s-1', 'assets/sprites/silhouettes/s-1.png')
@@ -346,6 +351,7 @@ class Boot extends Phaser.Scene {
         this.load.image('glob', 'assets/sprites/props/glob.png')
         this.load.image('livro-azul', 'assets/sprites/props/livro_azul.png')
         this.load.image('worm-toy', 'assets/sprites/props/worm_toy.png')
+        this.load.image('toy-boat', 'assets/sprites/props/toy_boat.png')
         
     }
     loadAudio() {
@@ -558,6 +564,7 @@ class Boot extends Phaser.Scene {
         this.createAnimations();
 
         this.scene.start("MenuScene");
+        //this.scene.start("LevelSelection");
     }
 
    
