@@ -88,11 +88,11 @@ class Boot extends Phaser.Scene {
 
         //this.loadFile()
         //#region Audio
-        this.loadAudio()
+        //this.loadAudio()
         //#endregion
         //#region Sprites
         this.loadProps()
-        this.loadUi()
+        //this.loadUi()
         //this.loadSilhouettes()
         this.loadPortraits()
         this.loadCharactersSprites()
@@ -110,89 +110,11 @@ class Boot extends Phaser.Scene {
 
     //#region Asset Load
     loadSpriteSheets() {
-        // #region 01 - Purple Character
-        this.load.spritesheet('purple-opening', 'assets/spritesheets/presentation/1-presentation_SS.png', {
-            frameWidth: 250,
-            frameHeight: 250
-        })
-        this.load.spritesheet('purple-review', 'assets/spritesheets/review/1-review_SS.png', {
-            frameWidth: 250,
-            frameHeight: 250
-        })
-        this.load.spritesheet('purple-ending', 'assets/spritesheets/endgame/1-victory_SS.png', {
-            frameWidth: 250,
-            frameHeight: 250
-        })
-        // #endregion
-        // #region 02 - Red Character
-        this.load.spritesheet('red-opening', 'assets/spritesheets/presentation/2-presentation_SS.png', {
-            frameWidth: 250,
-            frameHeight: 250
-        })
-        this.load.spritesheet('red-review', 'assets/spritesheets/review/2-review_SS.png', {
-            frameWidth: 250,
-            frameHeight: 250
-        })
-        this.load.spritesheet('red-ending', 'assets/spritesheets/endgame/2-victory_SS.png', {
-            frameWidth: 250,
-            frameHeight: 250
-        })
-        // #endregion
-        // #region 03 - Yellow Character
-        this.load.spritesheet('yellow-opening', 'assets/spritesheets/presentation/3-presentation_SS.png', {
-            frameWidth: 250,
-            frameHeight: 311
-        })
-        this.load.spritesheet('yellow-review', 'assets/spritesheets/review/3-review_SS.png', {
-            frameWidth: 250,
-            frameHeight: 311
-        })
-        this.load.spritesheet('yellow-ending', 'assets/spritesheets/endgame/3-victory_SS.png', {
-            frameWidth: 320,
-            frameHeight: 398
-        })
-        // #endregion
-        // #region 04 - Blue Character
-        this.load.spritesheet('blue-opening', 'assets/spritesheets/presentation/4-presentation_SS.png', {
-            frameWidth: 250,
-            frameHeight: 222
-        })
-        this.load.spritesheet('blue-review', 'assets/spritesheets/review/4-review_SS.png', {
-            frameWidth: 250,
-            frameHeight: 222
-        })
-        this.load.spritesheet('blue-ending', 'assets/spritesheets/endgame/4-victory_SS.png', {
-            frameWidth: 210,
-            frameHeight: 262
-        })
-        // #endregion
-        // #region 05 - Green Character
-        this.load.spritesheet('green-opening', 'assets/spritesheets/presentation/5-presentation_SS.png', {
-            frameWidth: 280,
-            frameHeight: 328
-        })
-        this.load.spritesheet('green-review', 'assets/spritesheets/review/5-review_SS.png', {
-            frameWidth: 270,
-            frameHeight: 235
-        })
-        this.load.spritesheet('green-ending', 'assets/spritesheets/endgame/5-victory_SSn.png', {
-            frameWidth: 300,
-            frameHeight: 300
-        })
-        // #endregion
-        // #region 06 - Effects
         this.load.spritesheet('conffeti-effect', 'assets/spritesheets/effects/conffeti_effect_ss.png', {
             frameWidth: 640,
             frameHeight: 316
         })
-        // this.load.spritesheet('transform-bright-effect', 'assets/spritesheets/effects/transform_bright_effect_ss.png', {
-        //     frameWidth: 512,
-        //     frameHeight: 512
-        // })
-        // this.load.spritesheet('glow-effect', 'assets/spritesheets/effects/glow_ss.png', {
-        //     frameWidth: 512,
-        //     frameHeight: 512
-        // })
+        
         this.load.spritesheet('explosion-effect', 'assets/spritesheets/effects/explosion_vfx_ss.png', {
             frameWidth: 256,
             frameHeight: 256
@@ -228,6 +150,7 @@ class Boot extends Phaser.Scene {
 
         //#endregion
     }
+
     loadBackgrounds() {
         for (var i = 1; i <= this.levelsquantity; i++) {
             this.load.image('bg' + i + 'p', 'assets/sprites/bgs/Levels-semGigas/' + i + '_SemGigas.png')
@@ -294,11 +217,11 @@ class Boot extends Phaser.Scene {
         this.load.image('3-portrait', 'assets/sprites/char-portraits/3.png')
         this.load.image('4-portrait', 'assets/sprites/char-portraits/4.png')
         this.load.image('5-portrait', 'assets/sprites/char-portraits/5.png')
-        this.load.image('1-sp', 'assets/sprites/char-portraits/1-small-portrait.png')
-        this.load.image('2-sp', 'assets/sprites/char-portraits/2-small-portrait.png')
-        this.load.image('3-sp', 'assets/sprites/char-portraits/3-small-portrait.png')
-        this.load.image('4-sp', 'assets/sprites/char-portraits/4-small-portrait.png')
-        this.load.image('5-sp', 'assets/sprites/char-portraits/5-small-portrait.png')
+        //this.load.image('1-sp', 'assets/sprites/char-portraits/1-small-portrait.png')
+        //this.load.image('2-sp', 'assets/sprites/char-portraits/2-small-portrait.png')
+        //this.load.image('3-sp', 'assets/sprites/char-portraits/3-small-portrait.png')
+        //this.load.image('4-sp', 'assets/sprites/char-portraits/4-small-portrait.png')
+        //this.load.image('5-sp', 'assets/sprites/char-portraits/5-small-portrait.png')
 
         this.load.image('portrait-panel', 'assets/sprites/char-portraits/portrait_panel.png')
     }
@@ -310,48 +233,7 @@ class Boot extends Phaser.Scene {
         this.load.image('s-5', 'assets/sprites/silhouettes/s-5.png')
     }
     loadProps() {
-        // this.load.image('v-ball', 'assets/sprites/props/v_ball.png')
-        //this.load.image('t-bear', 'assets/sprites/props/t_bear.png')
-        // this.load.image('d-toy', 'assets/sprites/props/d_toy.png')
-        // this.load.image('b-d-toy', 'assets/sprites/props/b_d_toy.png')
-        this.load.image('c-cat', 'assets/sprites/props/c_cat.png')
-        // this.load.image('w-horse', 'assets/sprites/props/w_horse.png')
-        // this.load.image('doll', 'assets/sprites/props/doll.png')
-        // this.load.image('doll-a', 'assets/sprites/props/doll_a.png')
-        // this.load.image('c-cat', 'assets/sprites/props/c_dice.png')
-        // this.load.image('b-lamp', 'assets/sprites/props/b_lamp.png')
-        // this.load.image('f-ball', 'assets/sprites/props/f_ball.png')
-        // this.load.image('b-book', 'assets/sprites/props/b_book.png')
-        // this.load.image('n-book', 'assets/sprites/props/notebook.png')
-        // this.load.image('p-case', 'assets/sprites/props/p_case.png')
-        // this.load.image('y-cube', 'assets/sprites/props/y_cube.png')
-        // this.load.image('c-sink', 'assets/sprites/props/c_sink.png')
-        // this.load.image('d-table', 'assets/sprites/props/d_table.png')
-        // this.load.image('sprinkler', 'assets/sprites/props/sprinkler.png')
-        // this.load.image('dish-d', 'assets/sprites/props/dish_d.png')
-        // this.load.image('c-door', 'assets/sprites/props/c_door.png')
-        // this.load.image('glove', 'assets/sprites/props/glove.png')
-        // this.load.image('mixer', 'assets/sprites/props/mixer.png')
-        // this.load.image('i-mixer', 'assets/sprites/props/i_mixer.png')
-        // this.load.image('b-chair', 'assets/sprites/props/b_chair.png')
-        // this.load.image('bag', 'assets/sprites/props/bag.png')
-        // this.load.image('dish', 'assets/sprites/props/dish.png')
-        // this.load.image('fruits', 'assets/sprites/props/fruits.png')
-        // this.load.image('glove-2', 'assets/sprites/props/glove_2.png')
-        // this.load.image('kettle', 'assets/sprites/props/kettle.png')
-        // this.load.image('rolling-pin', 'assets/sprites/props/rolling_pin.png')
-        // this.load.image('orange-puff', 'assets/sprites/props/orange_puff.png')
-        // this.load.image('y-puff', 'assets/sprites/props/y_puff.png')
-        // this.load.image('rubick', 'assets/sprites/props/rubick.png')
-        // this.load.image('t-unicorn', 'assets/sprites/props/t_unicorn.png')
-        // this.load.image('chair', 'assets/sprites/props/chair.png')
-        // this.load.image('turtle', 'assets/sprites/props/turtle.png')
-        // this.load.image('cat', 'assets/sprites/props/cat.png')
-        // this.load.image('glob', 'assets/sprites/props/glob.png')
-        // this.load.image('livro-azul', 'assets/sprites/props/livro_azul.png')
-        // this.load.image('worm-toy', 'assets/sprites/props/worm_toy.png')
-        // this.load.image('toy-boat', 'assets/sprites/props/toy_boat.png')
-
+        this.load.image('c-cat', 'assets/sprites/newProps/c_cat.png')
         this.load.image('bloco_amarelo', 'assets/sprites/newProps/bloco_amarelo.png')
         this.load.image('centopeia_verde', 'assets/sprites/newProps/centopeia_verde.png')
         this.load.image('gato_verde', 'assets/sprites/newProps/gato_verde.png')
@@ -414,106 +296,7 @@ class Boot extends Phaser.Scene {
     //#endregion I/O
     //#region Create Animation~
     createAnimations() {
-        //#region 01 - Purple Character
-        this.anims.create({
-            key: 'purple-opening',
-            frames: this.anims.generateFrameNumbers('purple-opening'),
-            frameRate: 24,
-            repeat: -1
-        })
-        this.anims.create({
-            key: 'purple-review',
-            frames: this.anims.generateFrameNumbers('purple-review'),
-            frameRate: 24,
-            repeat: -1
-        })
-        this.anims.create({
-            key: 'purple-ending',
-            frames: this.anims.generateFrameNumbers('purple-ending'),
-            frameRate: 24,
-            repeat: -1
-        })
-        //#endregion
-        //#region 02 - Red Character
-        this.anims.create({
-            key: 'red-opening',
-            frames: this.anims.generateFrameNumbers('red-opening'),
-            frameRate: 24,
-            repeat: -1
-        })
-        this.anims.create({
-            key: 'red-review',
-            frames: this.anims.generateFrameNumbers('red-review'),
-            frameRate: 24,
-            repeat: -1
-        })
-        this.anims.create({
-            key: 'red-ending',
-            frames: this.anims.generateFrameNumbers('red-ending'),
-            frameRate: 30,
-            repeat: -1
-        })
-        //#endregion
-        //#region 03 - Yellow Character
-        this.anims.create({
-            key: 'yellow-opening',
-            frames: this.anims.generateFrameNumbers('yellow-opening'),
-            frameRate: 24,
-            repeat: -1
-        })
-        this.anims.create({
-            key: 'yellow-review',
-            frames: this.anims.generateFrameNumbers('yellow-review'),
-            frameRate: 24,
-            repeat: -1
-        })
-        this.anims.create({
-            key: 'yellow-ending',
-            frames: this.anims.generateFrameNumbers('yellow-ending'),
-            frameRate: 30,
-            repeat: -1
-        })
-        //#endregion
-        //#region 04 - Blue Character
-        this.anims.create({
-            key: 'blue-opening',
-            frames: this.anims.generateFrameNumbers('blue-opening'),
-            frameRate: 24,
-            repeat: -1
-        })
-        this.anims.create({
-            key: 'blue-review',
-            frames: this.anims.generateFrameNumbers('blue-review'),
-            frameRate: 24,
-            repeat: -1
-        })
-        this.anims.create({
-            key: 'blue-ending',
-            frames: this.anims.generateFrameNumbers('blue-ending'),
-            frameRate: 30,
-            repeat: -1
-        })
-        //#endregion
-        //#region 05 - Green Character
-        this.anims.create({
-            key: 'green-opening',
-            frames: this.anims.generateFrameNumbers('green-opening'),
-            frameRate: 24,
-            repeat: -1
-        })
-        this.anims.create({
-            key: 'green-review',
-            frames: this.anims.generateFrameNumbers('green-review'),
-            frameRate: 24,
-            repeat: -1
-        })
-        this.anims.create({
-            key: 'green-ending',
-            frames: this.anims.generateFrameNumbers('green-ending'),
-            frameRate: 30,
-            repeat: -1
-        })
-        //#endregion
+        
         //#region 06 - Effects
         this.anims.create({
             key: 'conffeti-effect',
