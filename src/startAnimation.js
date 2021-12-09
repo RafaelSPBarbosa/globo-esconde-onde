@@ -57,11 +57,23 @@ export default class StartAnimation {
         // })
     }
 
+    animationData = [
+        {key: "Ihuu_Anim", animation: "ihuu"},
+        {key: "Iei_Anim", animation:  "iei"},
+        {key: "Han_Anim", animation:  "han"},
+        {key: "Grrr_Anim", animation: "grrr"},
+        {key: "Glup_Anim", animation: "glup"}
+    ]
+
     Start() {
         //this.scene.add.sprite(this.charFinalPositions[0].x, this.charFinalPositions[0].y, "eye-1").setScale(0.3);
 
         var centerX = this.scene.screenCenterX;
         var centerY = this.scene.screenCenterY;
+
+        //for(let i = 0; i<this.animationData.length; i++){
+        //    this.scene.add.spine(1400, 1350, "Glup_Anim", "glup_lamp_corda", false).setScale(0.7);
+        //}
 
         var startOffset = -500
 

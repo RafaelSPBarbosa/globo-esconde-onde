@@ -366,8 +366,8 @@ class Boot extends Phaser.Scene {
 
         this.load.spine(
             "Han_Anim",
-            "assets/spineAnimations/Han_Anim/Han.json",
-            "assets/spineAnimations/Han_Anim/Han.atlas"
+            "assets/spineAnimations/Han_Anim/han.json",
+            "assets/spineAnimations/Han_Anim/han.atlas"
         );
 
         this.load.spine(
@@ -378,8 +378,8 @@ class Boot extends Phaser.Scene {
 
         this.load.spine(
             "Ihuu_Anim",
-            "assets/spineAnimations/Ihuu_Anim/Ihuu.json",
-            "assets/spineAnimations/Ihuu_Anim/Ihuu.atlas"
+            "assets/spineAnimations/Ihuu_Anim/ihuu.json",
+            "assets/spineAnimations/Ihuu_Anim/ihuu.atlas"
         );
     }
 
