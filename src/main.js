@@ -43,7 +43,6 @@ window.addEventListener("load", function () {
         //height: 1536,
         width: 2560,
         height: 1288,
-        
         scale: {
             //mode: Phaser.Scale.ScaleModes.ENVELOP,
             //autoCenter: Phaser.Scale.Center.CENTER_BOTH,
@@ -57,7 +56,7 @@ window.addEventListener("load", function () {
         },
         fps: {
             target: 60,
-        },    
+        }, 
         scene: [Boot, MenuScene, LevelSelection, GameScene],
     });
 
@@ -119,36 +118,7 @@ class Boot extends Phaser.Scene {
             frameWidth: 256,
             frameHeight: 256
         })
-        // #endregion
-
-        //#region Eyes
-
-        this.load.spritesheet('eye1a', 'assets/spritesheets/eyes/eye1-ss.png', {
-            frameWidth: 250,
-            frameHeight: 250
-        })
-
-        this.load.spritesheet('eye2a', 'assets/spritesheets/eyes/eye2-ss.png', {
-            frameWidth: 250,
-            frameHeight: 250
-        })
-
-        this.load.spritesheet('eye3a', 'assets/spritesheets/eyes/eye3-ss.png', {
-            frameWidth: 250,
-            frameHeight: 250
-        })
-
-        this.load.spritesheet('eye4a', 'assets/spritesheets/eyes/eye4-ss.png', {
-            frameWidth: 250,
-            frameHeight: 250
-        })
-
-        this.load.spritesheet('eye5a', 'assets/spritesheets/eyes/eye5-ss.png', {
-            frameWidth: 250,
-            frameHeight: 250
-        })
-
-        //#endregion
+        
     }
 
     loadBackgrounds() {
@@ -309,43 +279,6 @@ class Boot extends Phaser.Scene {
             frames: this.anims.generateFrameNumbers('explosion-effect'),
             frameRate: 50,
             repeat: 0
-        })
-        //#endregion
-
-        //#region Eye
-        this.anims.create({
-            key: 'eye1a',
-            frames: this.anims.generateFrameNumbers('eye1a'),
-            frameRate: 30,
-            repeat: -1
-        })
-
-        this.anims.create({
-            key: 'eye2a',
-            frames: this.anims.generateFrameNumbers('eye2a'),
-            frameRate: 30,
-            repeat: -1
-        })
-
-        this.anims.create({
-            key: 'eye3a',
-            frames: this.anims.generateFrameNumbers('eye3a'),
-            frameRate: 30,
-            repeat: -1
-        })
-
-        this.anims.create({
-            key: 'eye4a',
-            frames: this.anims.generateFrameNumbers('eye4a'),
-            frameRate: 30,
-            repeat: -1
-        })
-
-        this.anims.create({
-            key: 'eye5a',
-            frames: this.anims.generateFrameNumbers('eye5a'),
-            frameRate: 30,
-            repeat: -1
         })
         //#endregion
     }

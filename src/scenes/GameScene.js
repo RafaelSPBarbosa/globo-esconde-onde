@@ -255,6 +255,7 @@ export default class GameScene extends Phaser.Scene {
         this.containerPanel = this.add.container(this.screenCenterX, this.cameras.main.height + 150, []);
 
         this.containerPanel.add(this.add.image(0, 0, "portrait-panel"));
+        //this.containerPanel.add(this.add.image(10, 37, "portrait-panel").setScale(1.75));
 
         var charactersPanelData = [
             {x:-400 , y: -41, scale: 0.13, eyeX: -400 ,eyeY:-61 },

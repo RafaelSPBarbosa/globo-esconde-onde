@@ -61,31 +61,32 @@ export default class Character {
             yPos + 100 + offsetY,
             this.animationData[0].key,
             this.animationData[0].victory,
-            true).setScale(this.animationData[0].scale).setVisible(false);
+            true).setScale(this.animationData[0].scale).setAlpha(0);
         
         this.charObj.setInteractive().on("pointerdown", ()=>{
-            this.charObj.setVisible(false);
+            this.scene.add.tween({
+                targets: this.charObj,
+                alpha: 0,
+                duration: 100 
+            })
+            //this.charObj.setVisible(false);
             this.scene.verifyVictory(this.charID);
             
-            this.startAnimation(xPos, yPos, offsetX, offsetY);
-            //var charAnim = this.scene.add.sprite(xPos, yPos, sprite);
-            //charAnim.play(this.characterAnimations[this.charID].victory);
-
-            //this.scene.time.addEvent({
-            //    delay:3000,
-            //    callback: ()=>{
-            //        charAnim.play(this.characterAnimations[this.charID].iddle);
-            //        if(charID == 4) charAnim.setScale(0.5);
-            //    }
-            //})
+            this.startAnimation(xPos, yPos);
+            
         });
     }
 
-    startAnimation(x,y, offsetX, offsetY){
-        //console.log(anim);
+    startAnimation(x,y){
         var explosionEffect =  this.scene.add.sprite(x, y, "explosion-effect");
         explosionEffect.play("explosion-effect");
         
+        this.scene.add.tween({
+            targets: this.anim,
+            alpha: 1,
+            duration: 100 
+        })
+
         this.anim.setVisible(true);
         this.playVictoryAnimation();
 
