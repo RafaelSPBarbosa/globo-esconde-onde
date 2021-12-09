@@ -86,7 +86,7 @@ class Boot extends Phaser.Scene {
 
         this.levelsquantity = 12;
 
-        this.loadFile()
+        //this.loadFile()
         //#region Audio
         this.loadAudio()
         //#endregion
@@ -230,11 +230,11 @@ class Boot extends Phaser.Scene {
     }
     loadBackgrounds() {
         for (var i = 1; i <= this.levelsquantity; i++) {
-            this.load.image('bg' + i + 'p', 'assets/sprites/bgs/pre/l' + i + '-.png')
+            this.load.image('bg' + i + 'p', 'assets/sprites/bgs/Levels-semGigas/' + i + '_SemGigas.png')
         }
 
         for (var i = 1; i <= this.levelsquantity; i++) {
-            this.load.image('bg' + i, 'assets/sprites/bgs/lvl' + i + '-bg.png')
+            this.load.image('bg' + i, 'assets/sprites/bgs/Levels-comGigas/' + i + '_ComGigas.png')
         }
 
         // for (var i = 1; i <= this.levelsquantity; i++) {
@@ -243,7 +243,6 @@ class Boot extends Phaser.Scene {
 
 
         this.load.image('levelSelection-bg', 'assets/sprites/bgs/levelBG.png')
-        this.load.image('menu-bg', 'assets/sprites/bgs/menu_bg.png')
         this.load.image('first-screen', 'assets/sprites/bgs/first_screen.png')
     }
     loadCharactersSprites() {
@@ -311,49 +310,90 @@ class Boot extends Phaser.Scene {
         this.load.image('s-5', 'assets/sprites/silhouettes/s-5.png')
     }
     loadProps() {
-        this.load.image('v-ball', 'assets/sprites/props/v_ball.png')
-        this.load.image('t-bear', 'assets/sprites/props/t_bear.png')
-        this.load.image('d-toy', 'assets/sprites/props/d_toy.png')
-        this.load.image('b-d-toy', 'assets/sprites/props/b_d_toy.png')
+        // this.load.image('v-ball', 'assets/sprites/props/v_ball.png')
+        //this.load.image('t-bear', 'assets/sprites/props/t_bear.png')
+        // this.load.image('d-toy', 'assets/sprites/props/d_toy.png')
+        // this.load.image('b-d-toy', 'assets/sprites/props/b_d_toy.png')
         this.load.image('c-cat', 'assets/sprites/props/c_cat.png')
-        this.load.image('w-horse', 'assets/sprites/props/w_horse.png')
-        this.load.image('doll', 'assets/sprites/props/doll.png')
-        this.load.image('doll-a', 'assets/sprites/props/doll_a.png')
-        this.load.image('c-cat', 'assets/sprites/props/c_dice.png')
-        this.load.image('b-lamp', 'assets/sprites/props/b_lamp.png')
-        this.load.image('f-ball', 'assets/sprites/props/f_ball.png')
-        this.load.image('b-book', 'assets/sprites/props/b_book.png')
-        this.load.image('n-book', 'assets/sprites/props/notebook.png')
-        this.load.image('p-case', 'assets/sprites/props/p_case.png')
-        this.load.image('y-cube', 'assets/sprites/props/y_cube.png')
-        this.load.image('c-sink', 'assets/sprites/props/c_sink.png')
-        this.load.image('d-table', 'assets/sprites/props/d_table.png')
-        this.load.image('sprinkler', 'assets/sprites/props/sprinkler.png')
-        this.load.image('dish-d', 'assets/sprites/props/dish_d.png')
-        this.load.image('c-door', 'assets/sprites/props/c_door.png')
-        this.load.image('glove', 'assets/sprites/props/glove.png')
-        this.load.image('mixer', 'assets/sprites/props/mixer.png')
-        this.load.image('i-mixer', 'assets/sprites/props/i_mixer.png')
-        this.load.image('b-chair', 'assets/sprites/props/b_chair.png')
-        this.load.image('bag', 'assets/sprites/props/bag.png')
-        this.load.image('dish', 'assets/sprites/props/dish.png')
-        this.load.image('fruits', 'assets/sprites/props/fruits.png')
-        this.load.image('glove-2', 'assets/sprites/props/glove_2.png')
-        this.load.image('kettle', 'assets/sprites/props/kettle.png')
-        this.load.image('rolling-pin', 'assets/sprites/props/rolling_pin.png')
-        this.load.image('orange-puff', 'assets/sprites/props/orange_puff.png')
-        this.load.image('y-puff', 'assets/sprites/props/y_puff.png')
-        this.load.image('rubick', 'assets/sprites/props/rubick.png')
-        this.load.image('t-unicorn', 'assets/sprites/props/t_unicorn.png')
-        this.load.image('chair', 'assets/sprites/props/chair.png')
-        this.load.image('turtle', 'assets/sprites/props/turtle.png')
-        this.load.image('cat', 'assets/sprites/props/cat.png')
-        this.load.image('glob', 'assets/sprites/props/glob.png')
-        this.load.image('livro-azul', 'assets/sprites/props/livro_azul.png')
-        this.load.image('worm-toy', 'assets/sprites/props/worm_toy.png')
-        this.load.image('toy-boat', 'assets/sprites/props/toy_boat.png')
+        // this.load.image('w-horse', 'assets/sprites/props/w_horse.png')
+        // this.load.image('doll', 'assets/sprites/props/doll.png')
+        // this.load.image('doll-a', 'assets/sprites/props/doll_a.png')
+        // this.load.image('c-cat', 'assets/sprites/props/c_dice.png')
+        // this.load.image('b-lamp', 'assets/sprites/props/b_lamp.png')
+        // this.load.image('f-ball', 'assets/sprites/props/f_ball.png')
+        // this.load.image('b-book', 'assets/sprites/props/b_book.png')
+        // this.load.image('n-book', 'assets/sprites/props/notebook.png')
+        // this.load.image('p-case', 'assets/sprites/props/p_case.png')
+        // this.load.image('y-cube', 'assets/sprites/props/y_cube.png')
+        // this.load.image('c-sink', 'assets/sprites/props/c_sink.png')
+        // this.load.image('d-table', 'assets/sprites/props/d_table.png')
+        // this.load.image('sprinkler', 'assets/sprites/props/sprinkler.png')
+        // this.load.image('dish-d', 'assets/sprites/props/dish_d.png')
+        // this.load.image('c-door', 'assets/sprites/props/c_door.png')
+        // this.load.image('glove', 'assets/sprites/props/glove.png')
+        // this.load.image('mixer', 'assets/sprites/props/mixer.png')
+        // this.load.image('i-mixer', 'assets/sprites/props/i_mixer.png')
+        // this.load.image('b-chair', 'assets/sprites/props/b_chair.png')
+        // this.load.image('bag', 'assets/sprites/props/bag.png')
+        // this.load.image('dish', 'assets/sprites/props/dish.png')
+        // this.load.image('fruits', 'assets/sprites/props/fruits.png')
+        // this.load.image('glove-2', 'assets/sprites/props/glove_2.png')
+        // this.load.image('kettle', 'assets/sprites/props/kettle.png')
+        // this.load.image('rolling-pin', 'assets/sprites/props/rolling_pin.png')
+        // this.load.image('orange-puff', 'assets/sprites/props/orange_puff.png')
+        // this.load.image('y-puff', 'assets/sprites/props/y_puff.png')
+        // this.load.image('rubick', 'assets/sprites/props/rubick.png')
+        // this.load.image('t-unicorn', 'assets/sprites/props/t_unicorn.png')
+        // this.load.image('chair', 'assets/sprites/props/chair.png')
+        // this.load.image('turtle', 'assets/sprites/props/turtle.png')
+        // this.load.image('cat', 'assets/sprites/props/cat.png')
+        // this.load.image('glob', 'assets/sprites/props/glob.png')
+        // this.load.image('livro-azul', 'assets/sprites/props/livro_azul.png')
+        // this.load.image('worm-toy', 'assets/sprites/props/worm_toy.png')
+        // this.load.image('toy-boat', 'assets/sprites/props/toy_boat.png')
+
+        this.load.image('bloco_amarelo', 'assets/sprites/newProps/bloco_amarelo.png')
+        this.load.image('centopeia_verde', 'assets/sprites/newProps/centopeia_verde.png')
+        this.load.image('gato_verde', 'assets/sprites/newProps/gato_verde.png')
+        this.load.image('leao_vermelho', 'assets/sprites/newProps/leao_vermelho.png')
+        this.load.image('livro_roxo', 'assets/sprites/newProps/livro_roxo.png')
+        this.load.image('livros_vermelho', 'assets/sprites/newProps/livros_vermelho.png')
+        this.load.image('objetos_azul', 'assets/sprites/newProps/objetos_azul.png')
+        this.load.image('pato_azul', 'assets/sprites/newProps/pato_azul.png')
+        this.load.image('puff_balde_amarelo', 'assets/sprites/newProps/puff_balde_amarelo.png')
+        this.load.image('vaso_roxo', 'assets/sprites/newProps/vaso_roxo.png')
+        this.load.image('urso_pelucia1', 'assets/sprites/newProps/urso_pelucia1.png')
+        this.load.image('peças_quebra_cabeca', 'assets/sprites/newProps/peças_quebra_cabeca.png')
+        this.load.image('unicornio_pelucia', 'assets/sprites/newProps/unicornio_pelucia.png')
+        this.load.image('puff_amarelo', 'assets/sprites/newProps/puff_amarelo.png')
+        this.load.image('puff_laranja', 'assets/sprites/newProps/puff_laranja.png')
+        this.load.image('sacola_feira', 'assets/sprites/newProps/sacola_feira.png')
+        this.load.image('rolo_macarrao', 'assets/sprites/newProps/rolo_macarrao.png')
+        this.load.image('chaleira', 'assets/sprites/newProps/chaleira.png')
+        this.load.image('cesta_frutas', 'assets/sprites/newProps/cesta_frutas.png')
+        this.load.image('cadeira_bebe', 'assets/sprites/newProps/cadeira_bebe.png')
+        this.load.image('batedeira_eletrica', 'assets/sprites/newProps/batedeira_eletrica.png')
+        this.load.image('luva', 'assets/sprites/newProps/luva.png')
+        this.load.image('cadeira_mesa', 'assets/sprites/newProps/cadeira_mesa.png')
+        this.load.image('porta_balcao', 'assets/sprites/newProps/porta_balcao.png')
+        this.load.image('mesa', 'assets/sprites/newProps/mesa.png')
+        this.load.image('escorredor_pratos', 'assets/sprites/newProps/escorredor_pratos.png')
+        this.load.image('borrifador', 'assets/sprites/newProps/borrifador.png')
+        this.load.image('livro', 'assets/sprites/newProps/livro.png')
+        this.load.image('estojo', 'assets/sprites/newProps/estojo.png')
+        this.load.image('estante_2', 'assets/sprites/newProps/estante_2.png')
+        this.load.image('caderninho', 'assets/sprites/newProps/caderninho.png')
+        this.load.image('brinquedo_argola', 'assets/sprites/newProps/brinquedo_argola.png')
+        this.load.image('bola_futebol', 'assets/sprites/newProps/bola_futebol.png')
+        this.load.image('braco_boneca', 'assets/sprites/newProps/braco_boneca.png')
+        this.load.image('cavalo_pau', 'assets/sprites/newProps/cavalo_pau.png')
+        this.load.image('cama_2', 'assets/sprites/newProps/cama_2.png')
+        this.load.image('bola_volei', 'assets/sprites/newProps/bola_volei.png')
+        this.load.image('urso_pelucia', 'assets/sprites/newProps/urso_pelucia.png')
+        this.load.image('bloco_verde', 'assets/sprites/newProps/bloco_verde.png')
         
     }
+
     loadAudio() {
         this.load.audio('hit', 'assets/sounds/hit.ogg')
         this.load.audio('end', 'assets/sounds/end.ogg')
@@ -361,16 +401,16 @@ class Boot extends Phaser.Scene {
     }
     //#endregion Asset Load
     //#region I/O
-    saveFile() {
-        this.game.save = new SaveData()
-        localStorage.setItem('saveFile', JSON.stringify(this.game.save))
-    }
-    loadFile() {
-        this.game.save = JSON.parse(localStorage.getItem('saveFile'))
-        if (this.game.save == null || this.game.save.unlockedLevels == null || this.game.save.lastPlayedLevel == null) {
-            this.saveFile()
-        }
-    }
+    //saveFile() {
+    //    this.game.save = new SaveData()
+    //    localStorage.setItem('saveFile', JSON.stringify(this.game.save))
+    //}
+    //loadFile() {
+    //    this.game.save = JSON.parse(localStorage.getItem('saveFile'))
+    //    if (this.game.save == null || this.game.save.unlockedLevels == null || this.game.save.lastPlayedLevel == null) {
+    //        this.saveFile()
+    //    }
+    //}
     //#endregion I/O
     //#region Create Animation~
     createAnimations() {
